@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Thompson Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/0579d1412b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "wciuI5vtvYyfew6j9",
+      });
+   })();
+</script>
+    <script src="app.js" defer></script>
+  </head>
+
+
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/Josh_Logo.png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke click" onclick="toggleContrast()"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title text__green">I'm Josh</h1>
+          <p class="header__para">
+            I’m a passionate <b class="text__green">Junior Frontend Developer</b> eager to build engaging and user-friendly web experiences. I have a solid foundation in HTML5, CSS3, and Javascript, with a growing interest in modern frameworks like React. I'm constantly learning and adapting to new technologies, driven by a love for clean, efficient code and intuitive design. <br><br>I thrive on solving problems creatively, collaborating with teams, and turning ideas into functional, responsive websites. Whether it's refining the user interface or ensuring seamless functionality, I take pride in creating meaningful digital solutions. <br><br>I'm currently seeking internship opportunities or junior roles where I can contribute, grow, and make an impact in the front-end development space. <br><br/>Here's a bit more
+            <a href="#"><b class="text__green click" onclick="toggleModal()">about me.</b></a>
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/joshua-thompson-628667184/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/Sub-Par-Golfer"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="./assets/JThompsonStandardResume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-solid fa-file"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"  onclick="toggleModal()"></i>
+      </button></a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Junior Frontend Developer
+          </h4>
+          <p class="modal__para">
+            With a strong focus on <b class="text__green">User Experience</b> and a constant drive to stay updated with the latest trends, I’m always looking for new challenges to push the boundaries of web development. Whether it’s crafting intuitive user interfaces or debugging tricky problems, I enjoy every part of the process that helps shape engaging digital experiences.
+
+            When I’m not coding, you can find me exploring design trends, leveling up my skills, or diving into the latest web technologies.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/HTML Logo.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/CSS3_logo.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/javascript-logo.png"
+                alt=""
+              />
+              <span class="language__name">Javascript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img react__logo"
+                src="./assets/React-logo.png"
+                alt=""
+                />
+                <span class="language__name">React</span>
+              </figure>
+              <figure class="modal__language">
+                <img
+                  class="modal__language--img"
+                  src="./assets/Typescript_logo.svg"
+                  alt=""
+                />
+                <span class="language__name">Typescript</span>
+              </figure>
+              <figure class="modal__language">
+                <img
+                  class="modal__language--img"
+                  src="./assets/next-js.svg"
+                  alt=""
+                />
+                <span class="language__name">Next.js</span>
+              </figure>
+              <figure class="modal__language">
+                <img
+                  class="modal__language--img"
+                  src="./assets/Vuejs-logo.svg"
+                  alt=""
+                />
+                <span class="language__name">Vue.js</span>
+              </figure>
+              <figure class="modal__language">
+                <img
+                  class="modal__language--img"
+                  src="./assets/expo-logo.svg"
+                  alt=""
+                />
+                <span class="language__name">Expo</span>
+              </figure>
+            </div>
+          </div>
+          <div class="modal__half modal__contact">
+          <i class="fa-regular fa-circle-xmark modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required>
+              </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send it my way</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/pointy tri.svg" class="shape shape-0">
+      <img src="./assets/triquetra.svg" class="shape shape-1">
+      <img src="./assets/triquetra.svg" class="shape shape-2">
+      <img src="./assets/pointy tri.svg" class="shape shape-3">
+      <img src="./assets/triquetra.svg" class="shape shape-4">
+      <img src="./assets/pointy tri.svg" class="shape shape-5">
+      <img src="./assets/pointy tri.svg" class="shape shape-6">
+      <img src="./assets/triquetra.svg" class="shape shape-7">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text__green">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/main-page-movie-db-min.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bkgr"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Movie Database
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript, React, Pagination
+                  </h4>
+                  <p class="project__description--para">
+                    A simple and straight-forward movie, game, tv show search engine using OMDB API.
+                    <br>Find all of the movies / tv shows and games your heart desires.
+                    <br>Built with HTML, CSS, Javascript, React, Pagination. 
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Sub-Par-Golfer"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://movie-database-weld.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/thumbnail_netflix-min.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bkgr"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Netflix Clone
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript, React, Vite
+                  </h4>
+                  <p class="project__description--para">
+                    Netflix clone that runs off of a Netflix API showing trailers or videos from Youtube.
+                    <br>Built with HTML, CSS, Javascript, React, Vite. 
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Sub-Par-Golfer"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://netflixclone-lyart-six.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/NFT_Internship-min.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bkgr"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Ultraverse NFT Virtual Internship
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript, React, Typescript, TailwindCSS
+                  </h4>
+                  <p class="project__description--para">
+                    Ultraverse NFT Trading Platform for Virtual Internship
+                    <br>Built with HTML, CSS, Javascript, React, Typescript, TailwindCSS
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Sub-Par-Golfer"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://josh-spg-internship.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/PAC_Img-min.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bkgr"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Paws and Claws Adoption Portal
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript, React, Typescript
+                  </h4>
+                  <p class="project__description--para">
+                    Paws and Claws Adoption Portal Petfinder API
+                    <br>Built with HTML, CSS, Javascript, React, Typescript
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Sub-Par-Golfer"
+                      class="project__description--link"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://adoption-portal.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets/Josh_Logo.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/Sub-Par-Golfer"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joshua-thompson-628667184/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white" onclick="toggleModal()"
+            >
+              Contact
+            </a>
+            <a
+              href="./assets/JThompsonStandardResume.pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright © 2024 <br />Designed by Josh Thompson
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
