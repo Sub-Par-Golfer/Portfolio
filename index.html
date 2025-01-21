@@ -29,37 +29,19 @@
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
-        <figure>
-          <img id="personal-logo" src="./assets/Josh_Logo.png" alt="" />
-        </figure>
+        <div class="nav__logo">
+          <img src="./assets/Josh_Logo.png" alt="Logo" id="personal-logo" />
+        </div>
+        <button class="burger-menu" aria-label="Toggle Navigation" onclick="toggleBurgerMenu()">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
         <ul class="nav__link--list">
+          <li class="nav__link"><a href="#about" class="nav__link--anchor" onclick="closeBurgerMenu()">About</a></li>
+          <li class="nav__link"><a href="#projects" class="nav__link--anchor" onclick="closeBurgerMenu()">Projects</a></li>
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#projects"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
-          </li>
-          <li class="nav__link" onclick="toggleModal()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke click" onclick="toggleContrast()"></i
-            ></a>
+            <a href="#" class="nav__link--anchor" onclick="toggleModal(); closeBurgerMenu()">Contact</a>
           </li>
         </ul>
       </nav>

@@ -59,3 +59,29 @@ function contact(event) {
         );
     })
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const navLinks = document.querySelector(".nav__link--list");
+  
+    burgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  });
+
+
+  function toggleBurgerMenu() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav__link--list');
+  
+    burgerMenu.classList.toggle('burger-active');
+    navLinks.classList.toggle('nav-links-active');
+  }
+  
+  function closeBurgerMenu() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav__link--list');
+  
+    burgerMenu.classList.remove('burger-active');
+    navLinks.classList.remove('nav-links-active');
+  }
