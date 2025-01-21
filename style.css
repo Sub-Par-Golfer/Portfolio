@@ -791,6 +791,7 @@ nav {
   font-weight: bold;
 }
 
+
 /* Responsive styles for smaller screens */
 @media (max-width: 980px) {
   nav {
@@ -938,6 +939,13 @@ nav {
 @media (max-width: 428px) {
   .header h1 {
     font-size: 1.2rem;
+  }
+
+  #personal-logo {
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: -150px;
   }
 
   .header__para {

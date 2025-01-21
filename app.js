@@ -85,3 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerMenu.classList.remove('burger-active');
     navLinks.classList.remove('nav-links-active');
   }
+
+  
